@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Selección de moneda de origen -->
+    <Spinner
+        android:id="@+id/spinnerFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Selección de moneda de destino -->
+    <Spinner
+        android:id="@+id/spinnerTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- TextView para mostrar el ratio de conversión -->
+    <TextView
+        android:id="@+id/textViewRatio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ratio: --"
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Botón para actualizar el ratio manualmente -->
+    <Button
+        android:id="@+id/buttonUpdateRatio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actualizar ratio"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Campo para cantidad a convertir -->
+    <EditText
+        android:id="@+id/editTextAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cantidad"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Botón para convertir -->
+    <Button
+        android:id="@+id/buttonConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convertir"/>
+
+    <!-- Resultado de la conversión -->
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

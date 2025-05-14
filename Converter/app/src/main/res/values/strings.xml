@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Converter</string>
+    <string name="button_to_euros">A euros</string>
+    <string name="button_to_dollars">A dólares</string>
+
+    <string-array name="currencies">
+        <item>EUR</item>
+        <item>USD</item>
+        <item>GBP</item>
+        <item>JPY</item>
+        <item>AUD</item>
+        <item>CAD</item>
+        <item>CHF</item>
+        <item>CNY</item>
+        <item>MXN</item>
+        <!-- Añade más si quieres -->
+    </string-array>
+
+</resources>
